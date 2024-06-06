@@ -16,6 +16,8 @@ Data structures proyect.dev  // proyecto para abrir con aplicación c++
 
 Data structures proyect.exe // Permite ejecutar el software sin tener instalado copilador C++
 
+
+
 ************************************************************************************************
 
 Esto es para editar
