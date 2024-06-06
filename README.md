@@ -16,7 +16,6 @@ Data structures proyect.dev  // proyecto para abrir con aplicación c++
 
 Data structures proyect.exe // Permite ejecutar el software sin tener instalado copilador C++
 
-![WhatsApp Image 2024-06-05 at 10 20 39 PM](https://github.com/Greidycc/Data-structures-proyect/assets/159094346/c77c8640-3747-4f4a-a246-c2e53df2006e)
 
 
 ************************************************************************************************
