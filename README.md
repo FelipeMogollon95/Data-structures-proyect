@@ -1078,6 +1078,9 @@ Dentro del `case 'a':`:
 
 ****
 
+![bst_tree](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/686ad61b-6bed-412d-b5a4-fdabc8ccf7b1)
+
+
 case 'b': {
                             cout << "Arbol inicial (nivel por nivel):\n";
                             printTree(root);
@@ -1109,6 +1112,9 @@ Dentro del `case 'b':`:
 - `break;`: Termina el `case 'b'` y sale del bloque `switch`. Esto significa que después de completar la visualización y generación de la imagen del árbol, el programa no ejecutará más código dentro del `switch` a menos que el usuario vuelva a seleccionar la opción `'b'` o alguna otra opción válida.
 
 *****
+
+![avl_tree](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/7ad1f8a6-030d-4179-b385-10a1082a6034)
+
 
 case 'c': {
                             TreeNode* avlRoot = convertToAVL(root);
@@ -1142,6 +1148,9 @@ Dentro del `case 'c':`:
 - `break;`: Termina el `case 'c'` y sale del bloque `switch`. Esto significa que después de completar la conversión y visualización del árbol AVL, el programa no ejecutará más código dentro del `switch` a menos que el usuario vuelva a seleccionar la opción `'c'` o alguna otra opción válida.
 
 *****
+
+![rb_tree](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/5af94980-cb33-4035-b9ed-849e73d06818)
+
 
 case 'd': {
                             RBNode* rbRoot = convertToRB(root);
@@ -1283,6 +1292,9 @@ Dentro del `case 'a':`:
 
 *****
 
+![graph](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/c1815af6-41fc-4ae5-bbc9-70b751c39e7d)
+
+
 case 'b': {
                             generateDotFile(graph, "graph.dot");
 
@@ -1353,6 +1365,9 @@ Este diseño permite al usuario interactuar con algoritmos de camino más corto 
 
 *****
 
+![dijkstra](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/cc19e6b8-6b5f-4c9d-ae21-e7c3eec13bc5)
+
+
 switch (subChoice) {
                                     case 'a': {
                                         int startNode;
@@ -1380,6 +1395,10 @@ Dentro del `case 'a':`:
 - `break;`: Termina el `case 'a'` y sale del bloque `switch`. Esto significa que después de ejecutar el algoritmo de Dijkstra, el programa no ejecutará más código dentro del `switch` a menos que el usuario vuelva a seleccionar la opción `'a'` o alguna otra opción válida.
 
 *****
+
+![floyd_warshall](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/ebd1a133-5ce3-4680-9f48-ed946f88ea94)
+
+
 case 'b': {
                                         floydWarshall(graph);
                                         break;
@@ -1465,6 +1484,9 @@ Este diseño permite al usuario interactuar con algoritmos de árboles de peso m
 
 *****
 
+![kruskal](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/dfd706ec-d4e5-4a44-b395-0baf888747b0)
+
+
  switch (subChoice) {
                                     case 'a': {
                                         kruskal(graph);
@@ -1483,6 +1505,10 @@ Dentro del `case 'a':`:
 - `break;`: Termina el `case 'a'` y sale del bloque `switch`. Esto significa que después de ejecutar el algoritmo de Kruskal, el programa no ejecutará más código dentro del `switch` a menos que el usuario vuelva a seleccionar la opción `'a'` o alguna otra opción válida.
 
 *****
+
+![prim](https://github.com/FelipeMogollon95/Data-structures-proyect/assets/159094320/c2a3de90-552c-451c-a3ae-6c7cc4092107)
+
+
 case 'b': {
                                         prim(graph);
                                         break;
