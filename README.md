@@ -716,10 +716,14 @@ int find(vector<int>& parent, int i) {
 
 Busca la raíz del conjunto al que pertenece un nodo específico en un grafo o árbol. Utiliza el algoritmo de búsqueda recursiva para encontrar el ancestro común más cercano (ACM) de un nodo dado, lo cual representa la raíz del conjunto al que pertenece ese nodo.
 
-**Parámetros**:
-  `vector<int>& parent`: Referencia al vector que contiene los índices de los nodos padres. El valor -1 indica que el nodo es la raíz de su propio conjunto.
+**Parámetros**
+
+  `vector<int>& parent`: Referencia al vector que contiene los índices de los nodos padres. El valor -1 indica que el nodo es 
+   la raíz de su propio conjunto.
+  
   `int i`: Índice del nodo cuya raíz se desea encontrar.
-  Retorno: Entero que representa la raíz del conjunto al que pertenece el nodo i.
+   
+   Retorno: Entero que representa la raíz del conjunto al que pertenece el nodo i.
 
 // FUNCIÓN unionSets
 
@@ -733,11 +737,16 @@ void unionSets(vector<int>& parent, int x, int y) {
 
 Une dos conjuntos en un solo conjunto mediante la operación de unión. Se utiliza para combinar componentes conectados en un grafo o árbol.
 
-**Parámetros**:
-  `vector<int>& parent`: Referencia al vector que contiene los índices de los nodos padres. El valor -1 indica que el nodo es la raíz de su propio conjunto.
+**Parámetros**
+
+  `vector<int>& parent`: Referencia al vector que contiene los índices de los nodos padres. El valor -1 indica que el nodo es 
+   la raíz de su propio conjunto.
+  
   `int x`: Índice del primer nodo cuyo conjunto se desea unir.
+  
   `int y`: Índice del segundo nodo cuyo conjunto se desea unir.
-  Efecto secundario: Modifica el vector `parent` para reflejar la nueva estructura de conjuntos después de la unión.
+  
+   Efecto secundario: Modifica el vector `parent` para reflejar la nueva estructura de conjuntos después de la unión.
 
 // FUNCIÓN compareEdges
 
@@ -749,10 +758,15 @@ bool compareEdges(const Edge& a, const Edge& b) {
 
 Compara dos aristas basándose en su peso. Se utiliza para ordenar las aristas de un grafo según su peso antes de aplicar el algoritmo de Kruskal.
 
-**Parámetros**:
-  `const Edge& a`: Referencia al vector que contiene los índices de los nodos padres. El valor -1 indica que el nodo es la raíz de su propio conjunto.
+**Parámetros**
+
+  `const Edge& a`: Referencia al vector que contiene los índices de los nodos padres. El valor -1 indica que el nodo es la raíz 
+   de su propio conjunto.
+  
   `const Edge& b`: Índice del primer nodo cuyo conjunto se desea unir.
-  Retorno: Valor booleano que indica si el peso de la arista a es menor que el peso de la arista b. Se utiliza para ordenar las aristas en orden ascendente de peso.
+  
+  Retorno: Valor booleano que indica si el peso de la arista a es menor que el peso de la arista b. Se utiliza para ordenar las 
+  aristas en orden ascendente de peso.
 
 //ALGORITMO KRUSKAL
 
@@ -789,10 +803,12 @@ void kruskal(const Graph& graph) {
 
 Implementación del algoritmo de Kruskal para encontrar un árbol de expansión mínima (AEM) en un grafo no dirigido ponderado. El algoritmo selecciona aristas disjuntas en orden creciente de peso hasta que se alcanza el número máximo de aristas que puede tener un árbol conexo, es decir, (V - 1) aristas donde V es el número de vértices.
 
-**Parámetros**:
+**Parámetros**
+
   `const Graph& graph`: Grafo no dirigido ponderado del cual se desea encontrar el AEM.
-  Efecto secundario: Construye un vector `result` que contiene las aristas del AEM y modifica el vector `parent` para reflejar la estructura de conjuntos final después de 
-  realizar todas las uniones necesarias.
+  
+  Efecto secundario: Construye un vector `result` que contiene las aristas del AEM y modifica el vector `parent` para reflejar 
+  la estructura de conjuntos final después de realizar todas las uniones necesarias.
 
 // Imprimir el Árbol de Expansión Mínima
 
@@ -887,9 +903,12 @@ void prim(const Graph& graph) {
 Implementación del algoritmo de Prim para encontrar un árbol de expansión mínima (AEM) en un grafo ponderado conexo. El algoritmo construye el AEM añadiendo gradualmente aristas que conectan vértices no incluidos en el MST actual, siempre elegiendo la arista con el peso mínimo que conecta un vértice fuera del MST con uno dentro.
 
 **Parámetros**:
+
   `const Graph& graph`: Grafo ponderado conexo del cual se desea encontrar el AEM.
-  Efecto secundario: Construye un vector `parent` que contiene el padre de cada vértice en el MST, y un vector `key` que almacena la distancia mínima desde el vértice 
-  inicial hasta cada vértice. Además, mantiene un vector `inMST` que marca los vértices ya incluidos en el MST.
+  
+   Efecto secundario: Construye un vector `parent` que contiene el padre de cada vértice en el MST, y un vector `key` que 
+   almacena la distancia mínima desde el vértice inicial hasta cada vértice. Además, mantiene un vector `inMST` que marca los 
+   vértices ya incluidos en el MST.
 
 // Imprimir el árbol de expansión mínima (Prim)
 
